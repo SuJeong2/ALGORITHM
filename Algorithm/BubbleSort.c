@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int max, min, temp;
+int temp;
 
 //Ascending
 void BubbleSort(int arr[], int n) {
@@ -24,8 +24,7 @@ void print_sort(int arr[], int n) {
 void main() {
 
 	int arr[10] = { 29,10,14,1,5,30,12,8,22,0 };
-	int arr2[10] = { 29,10,14,1,5,30,12,8,22,0 };
-
+	
 	int n = sizeof(arr) / sizeof(int);
 
 	BubbleSort(arr, n);
