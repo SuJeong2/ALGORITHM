@@ -1,4 +1,4 @@
-package algo.study.bj;
+package 백준;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,10 +6,11 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BJ_15657_NM8 {
+public class BJ_15654_NM5 {
 
 	public static int numbers[]; //순열 값을 넣을 배열
 	public static int arr[];
+	public static boolean isSelected[];
 	public static int n,m;
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	
@@ -30,17 +31,18 @@ public class BJ_15657_NM8 {
 		}
 		
 		Arrays.sort(arr);
+		isSelected = new boolean[max+1];
 
 		try {
-			comb(0,0);
+			perm(0);
 			bw.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-	
-	public static void comb(int cnt, int start) throws IOException {
+
+	public static void perm (int cnt) throws IOException {
+		
 		if(cnt==m) {
 			for(int i=0; i<m; i++) {
 				bw.write(numbers[i]+" ");
@@ -50,9 +52,14 @@ public class BJ_15657_NM8 {
 		}
 		
 		for(int i=0; i<n; i++) {
+			if(isSelected[arr[i]]==true) continue;
+			
+			isSelected[arr[i]]=true;
 			numbers[cnt]=arr[i];
-			comb(cnt+1,i+1);
+			
+			perm(cnt+1);
+			
+			isSelected[arr[i]]=false;
 		}
 	}
-
 }

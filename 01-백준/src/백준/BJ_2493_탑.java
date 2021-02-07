@@ -1,4 +1,4 @@
-package algo.study.bj;
+package 백준;
 
 import java.util.Scanner;
 import java.util.Stack;
