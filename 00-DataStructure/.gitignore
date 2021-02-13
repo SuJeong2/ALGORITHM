@@ -6,5 +6,7 @@
 #JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-#src/
-src/*.java
+.metadata
+bin/
+tmp/
+.settings/
