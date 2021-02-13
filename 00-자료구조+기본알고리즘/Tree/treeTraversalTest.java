@@ -36,7 +36,7 @@ public class treeTraversalTest {
 		
 		//후위순회 : 왼쪽 - 오른쪽 - 부모 LRV
 		//H I D E B F G C A
-		System.out.print("전위순회 : ");
+		System.out.print("후위순회 : ");
 		tree.postorder_traversal(1);
 		System.out.println();
 	}
