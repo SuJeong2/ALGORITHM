@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BJ_2839_설탕배달 {
 
 	public static void main(String[] args) {
-
+		//백준
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
