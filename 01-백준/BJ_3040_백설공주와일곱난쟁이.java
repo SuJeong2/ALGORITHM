@@ -2,7 +2,7 @@ package com.ssafy.day0215;
 
 import java.util.Scanner;
 
-public class BJ_3020_백설공주와일곱난쟁이 {
+public class BJ_3040_백설공주와일곱난쟁이 {
 
 	static int[] nanjang, numbers;
 	static boolean flag;
