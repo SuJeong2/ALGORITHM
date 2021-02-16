@@ -6,6 +6,7 @@ public class BJ_2839_설탕배달 {
 
 	public static void main(String[] args) {
 
+		//탐욕 알고리즘
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
