@@ -26,6 +26,10 @@ public class BJ_2628_종이자르기 {
 		
 		//System.out.println(method1()); //배열만 사용
 		//System.out.println(method2()); //ArrayList 활용
+		/*
+		 method1, method2는 각 구간별 길이를 구해서
+		 세로 * 가로 하면서 최댓값 도출
+		 */
 		System.out.println(method3()); //ArrayList 활용 + 가로세로 최대값만 구해서 결과 리턴
 	}
 	
