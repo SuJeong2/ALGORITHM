@@ -23,9 +23,6 @@ public class SWEA_5607_조합 {
 			
 			System.out.println("#"+tc+" "+result);
 		}
-		
-		
-
 	}
 
 	private static long nCr(int n, int r, long p) {
