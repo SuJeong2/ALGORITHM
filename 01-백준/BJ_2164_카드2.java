@@ -22,7 +22,6 @@ public class BJ_2164_카드2 {
 //			if(queue.size()==1)
 //				break;
 
-			
 			int top = queue.poll();
 			queue.offer(top);
 		}
