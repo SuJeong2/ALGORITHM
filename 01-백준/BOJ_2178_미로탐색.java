@@ -33,7 +33,6 @@ public class BOJ_2178_미로탐색 {
 		}
 		
 		Miro();
-		System.out.println(Arrays.deepToString(MIN));
 		System.out.println(MIN[N-1][M-1]);
 	}
 	
