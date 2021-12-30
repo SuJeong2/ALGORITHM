@@ -75,6 +75,7 @@ public class BOJ_10282_해킹 {
 		}
 	}
 
+	
 	private static void dijkstra(int start) {
 		PriorityQueue<Node> queue = new PriorityQueue<>();
 		queue.add(new Node(start, 0));
