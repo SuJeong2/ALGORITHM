@@ -69,6 +69,7 @@ public class BOJ_1414_불우이웃돕기 {
 			count++; //연결된 컴퓨터의 개수
 			
 			for(int i=0; i<n; i++) {
+				if(cur.node==i) continue; //자기 자신은 연결할 필요가 없음
 				if(map[cur.node][i]==0 && map[i][cur.node]==0) continue;
 				int a = map[cur.node][i]==0? Integer.MAX_VALUE : map[cur.node][i];
 				int b = map[i][cur.node]==0? Integer.MAX_VALUE : map[i][cur.node];
